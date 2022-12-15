@@ -15,9 +15,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use('/', async(req, res)=>{
-    res.send("Home");
-})
+// app.use('/', async(req, res)=>{
+//     res.send("Home");
+// })
 
 app.use('/user', userController);
 
